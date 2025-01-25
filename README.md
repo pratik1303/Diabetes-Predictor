@@ -77,7 +77,7 @@ Training/
 ├── Screenshots/
 │   ├── home_page_screenshot.png      # Screenshot of the Home Page
 │   ├── result_page_screenshot.png    # Screenshot of the Result Page
-│   └── feedback_page_screenshot.png  # Screenshot of the Feedback Page
+│   └── Feedback_page_screenshot.png  # Screenshot of the Feedback Page
 ├── App.py               # Flask application
 ├── Procfile             # Heroku process file
 ├── requirements.txt     # Python dependencies
