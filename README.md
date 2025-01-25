@@ -66,23 +66,26 @@ Inputs are standardized using **scikit-learn's StandardScaler** for better perfo
 ## 📂 Project Structure
 <pre>
 <code>
-Training/
-├── models/
-│   ├── rf_model.pkl      # Pre-trained Random Forest model
-│   └── rf_scaler.pkl     # Scaler for input normalization
-├── templates/
-│   ├── index.html       # Home page for data input
-│   ├── result.html      # Displays prediction results
-│   └── feedback.html    # Feedback form
-├── Screenshots/
-│   ├── home_page_screenshot.png      # Screenshot of the Home Page
-│   ├── result_page_screenshot.png    # Screenshot of the Result Page
-│   └── Feedback_page_screenshot.png  # Screenshot of the Feedback Page
-├── App.py               # Flask application
-├── Procfile             # Heroku process file
-├── requirements.txt     # Python dependencies
-├── runtime.txt          # Python version for Heroku
-└── README.md            # Project documentation (this file)
+Diabetes-Predictor/
+├── models/                    # Pre-trained models and scaler
+│   ├── rf_model.pkl           # Pre-trained Random Forest model
+│   └── rf_scaler.pkl          # Scaler for input normalization
+├── templates/                 # HTML templates for the web app
+│   ├── index.html             # Home page for data input
+│   ├── result.html            # Displays prediction results
+│   └── feedback.html          # Feedback form
+├── Screenshots/               # Screenshots for documentation
+│   ├── home_page_screenshot.png   # Screenshot of the Home Page
+│   ├── result_page_screenshot.png # Screenshot of the Result Page
+│   └── Feedback_page_screenshot.png # Screenshot of the Feedback Page
+├── App.py                     # Flask application
+├── Procfile                   # Heroku process file
+├── requirements.txt           # Python dependencies
+├── runtime.txt                # Python version for Heroku
+├── README.md                  # Project documentation
+└── training/                  # Folder for model training-related files
+    ├── model_training.ipynb   # Jupyter Notebook for model training
+    └── diabetes.csv           # Dataset used for training
 
 </code>
 </pre>
