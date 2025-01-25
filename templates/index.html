@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Prediction Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            background: linear-gradient(to bottom right, #6a11cb, #2575fc);
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
+            min-height: 100vh;
+        }
+
+        .form-container {
+            max-width: 700px;
+            margin: 50px auto;
+            background: #ffffff;
+            color: #333333;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .form-container h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        .form-container .btn-primary {
+            background-color: #007bff;
+            border: none;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-container .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        .form-container .form-group label {
+            font-weight: bold;
+        }
+
+        .form-container input {
+            border-radius: 8px;
+        }
+
+        .header-icon {
+            font-size: 4rem;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="text-center">
+        <i class="fas fa-heartbeat header-icon"></i>
+        <h1>Diabetes Prediction</h1>
+        <p class="lead">Enter your details below to check your diabetes status</p>
+    </div>
+
+    <div class="form-container">
+        <form action="/predict" method="POST">
+            <div class="form-group">
+                <label for="Pregnancies">Pregnancies (0-20)</label>
+                <input type="number" step="1" min="0" max="20" class="form-control" id="Pregnancies" name="Pregnancies" placeholder="Number of pregnancies (0-20)" required>
+            </div>
+            <div class="form-group">
+                <label for="Glucose">Glucose Level (0-200)</label>
+                <input type="number" step="0.1" min="0" max="200" class="form-control" id="Glucose" name="Glucose" placeholder="Enter glucose level (0-200 mg/dL)" required>
+            </div>
+            <div class="form-group">
+                <label for="BloodPressure">Blood Pressure (0-140)</label>
+                <input type="number" step="0.1" min="0" max="140" class="form-control" id="BloodPressure" name="BloodPressure" placeholder="Enter blood pressure (0-140 mmHg)" required>
+            </div>
+            <div class="form-group">
+                <label for="SkinThickness">Skin Thickness (0-99)</label>
+                <input type="number" step="0.1" min="0" max="99" class="form-control" id="SkinThickness" name="SkinThickness" placeholder="Enter skin thickness (0-99 mm)" required>
+            </div>
+            <div class="form-group">
+                <label for="Insulin">Insulin Level (0-900)</label>
+                <input type="number" step="0.1" min="0" max="900" class="form-control" id="Insulin" name="Insulin" placeholder="Enter insulin level (0-900 μU/mL)" required>
+            </div>
+            <div class="form-group">
+                <label for="BMI">BMI (0-70)</label>
+                <input type="number" step="0.1" min="0" max="70" class="form-control" id="BMI" name="BMI" placeholder="Enter BMI value (0-70 kg/m²)" required>
+            </div>
+            <div class="form-group">
+                <label for="DiabetesPedigreeFunction">Diabetes Pedigree Function (0-2.5)</label>
+                <input type="number" step="0.01" min="0" max="2.5" class="form-control" id="DiabetesPedigreeFunction" name="DiabetesPedigreeFunction" placeholder="Enter pedigree function value (0-2.5)" required>
+            </div>
+            <div class="form-group">
+                <label for="Age">Age (0-110)</label>
+                <input type="number" step="1" min="0" max="110" class="form-control" id="Age" name="Age" placeholder="Enter age (0-110 years)" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Check Prediction</button>
+        </form>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Diabetes Prediction. All Rights Reserved.</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

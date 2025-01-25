@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background: linear-gradient(to bottom right, #6a11cb, #2575fc);
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .result-container {
+            background: #ffffff;
+            color: #333333;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            width: 100%;
+        }
+
+        .result-container h1 {
+            font-size: 2.5rem;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        .result-container h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        .result-container .btn {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+        }
+
+        .btn-correct {
+            background-color: #28a745;
+            color: white;
+            border: none;
+        }
+
+        .btn-correct:hover {
+            background-color: #218838;
+        }
+
+        .btn-incorrect {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+        }
+
+        .btn-incorrect:hover {
+            background-color: #c82333;
+        }
+
+        .info {
+            margin-top: 30px;
+            text-align: center;
+            color: #333333;
+            font-size: 1rem;
+        }
+
+        .info p {
+            margin: 0;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="result-container">
+        <h1>Prediction Result</h1>
+        <h3>{{ result }}</h3>
+        <!-- "Go Back" button -->
+        <a href="/" class="btn btn-primary" id="go-back-btn">Go Back</a>
+        <form id="feedback-form" action="/feedback" method="POST">
+            <!-- Pass feedback ('correct' or 'incorrect') as a hidden input -->
+            <input type="hidden" name="input_data" value="{{ input_data }}">
+            <input type="hidden" name="label" value="{{ 1 if result == 'Diabetic' else 0 }}">
+            <button type="submit" name="feedback" value="correct" class="btn btn-correct">Prediction Was Correct</button>
+            <button type="submit" name="feedback" value="incorrect" class="btn btn-incorrect">Prediction Was Wrong</button>
+        </form>
+        <div class="info">
+            <p><span class="highlight">Your feedback matters!</span> It helps us improve the accuracy of our model.</p>
+            <p>By providing feedback, you’re contributing to better predictions and making the model smarter for everyone.</p>
+        </div>
+    </div>
+</body>
+</html>
