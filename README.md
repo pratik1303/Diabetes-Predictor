@@ -142,6 +142,10 @@ The following table shows the valid ranges for each input field used by the diab
 
 ![Result page screenshot](screenshots/result_page.png)
 
+**Feedback Page:**
+
+![Feedback page screenshot](screenshots/result_page.png)
+
 ## 🙌 Contributing
 Contributions are welcome! Please fork the repository, make your changes, and submit a pull request. 😊
 
