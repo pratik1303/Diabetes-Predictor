@@ -74,11 +74,16 @@ Training/
 │   ├── index.html       # Home page for data input
 │   ├── result.html      # Displays prediction results
 │   └── feedback.html    # Feedback form
+├── Screenshots/
+│   ├── home_page_screenshot.png      # Screenshot of the Home Page
+│   ├── result_page_screenshot.png    # Screenshot of the Result Page
+│   └── feedback_page_screenshot.png  # Screenshot of the Feedback Page
 ├── App.py               # Flask application
 ├── Procfile             # Heroku process file
-├── requirements.txt   # Python dependencies
-├── runtime.txt        # Python version for Heroku
-└── README.md          # Project documentation (this file)
+├── requirements.txt     # Python dependencies
+├── runtime.txt          # Python version for Heroku
+└── README.md            # Project documentation (this file)
+
 </code>
 </pre>
 
@@ -136,15 +141,15 @@ The following table shows the valid ranges for each input field used by the diab
 ## 📸 Screenshots
 **Home Page:**
 
-![Home page screenshot](screenshots/home_page.png)
+![Home page screenshot](Screenshots/home_page_screenshot.png)
 
 **Result Page:**
 
-![Result page screenshot](screenshots/result_page.png)
+![Result page screenshot](Screenshots/result_page_screenshot.png)
 
 **Feedback Page:**
 
-![Feedback page screenshot](screenshots/result_page.png)
+![Feedback page screenshot](Screenshots/Feedback_page_screenshot.png)
 
 ## 🙌 Contributing
 Contributions are welcome! Please fork the repository, make your changes, and submit a pull request. 😊
