@@ -99,8 +99,8 @@ Follow these steps to run the app locally or deploy it on Heroku:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/diabetes-prediction.git
-cd diabetes-prediction
+git clone https://github.com/pratik1303/Diabetes-Predictor.git
+cd Diabetes-Predictor
 ```
 ### 2. Install Dependencies
 Make sure you have Python installed and then run:
