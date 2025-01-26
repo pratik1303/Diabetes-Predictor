@@ -111,7 +111,6 @@ pip install -r requirements.txt
 Create a .env file in the project root and add:
 ```bash
 MONGO_URI=your-mongodb-uri
-SECRET_KEY=your-secret-key
 ```
 ### 4. Run Locally
 Start the app using:
