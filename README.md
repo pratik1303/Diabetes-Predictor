@@ -172,10 +172,7 @@ If you have any questions or suggestions, feel free to reach out:
 Before running the application, please be sure to replace the following placeholders with your own information:
 
 * **MongoDB URI:** Replace `your-mongodb-uri` in the `.env` file with your actual MongoDB connection string.
-* **Secret Key:** Replace `your-secret-key` in the `.env` file with a strong, unique secret key for your application.
 * **Heroku Deployment:** Replace `<YOUR_WEBSITE_LINK>` with the actual URL of your deployed app on Heroku.
-* **GitHub Username:** Replace `your-username` with your GitHub username throughout the document.
-* **Contact Email:** Replace `your-email@example.com` with your actual email address in the Contact section.
 
 Following these steps will ensure the application functions correctly and your contact information is accurate.
 
